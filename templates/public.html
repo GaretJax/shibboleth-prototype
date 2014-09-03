@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>This is a public resource</h2>
+
+  <p>You don't need to be logged in to view this page, but if you are your session details will be shown below.</p>
+  <p>Your session details are:</p>
+  <table>
+    {% for k in keys %}
+    <tr>
+      <th>{{ k }}</th>
+      <td>{{ env[k] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
+
+

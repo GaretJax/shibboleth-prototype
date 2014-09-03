@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>This is a protected resource</h2>
+
+  <p>You need to be logged in to view this page.</p>
+  <p>Your session details are:</p>
+  <table>
+    {% for k in keys %}
+    <tr>
+      <th>{{ k }}</th>
+      <td>{{ env[k] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
+

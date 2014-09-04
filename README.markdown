@@ -32,3 +32,12 @@ You can now access the demo at http://dev/
 Note: the demo is configured to be available at the `dev` hostname. Changes
 are needed to the apache and shibboleth configuration in `contrib` to make
 everything work from `localhost`.
+
+
+Result
+------
+
+The environment made available to the python webapp by the shibboleth module
+is available at http://dev/protected/.
+
+![Example](http://cl.ly/image/3u3I1L2g2v35/Screen%20Shot%202014-09-03%20at%2016.56.19.png)
